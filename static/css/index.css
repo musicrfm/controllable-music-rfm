@@ -1,0 +1,284 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+/* Completely hide any Bulma carousel remnants */
+.carousel.results-carousel,
+.slider,
+.slider-container {
+  display: none !important;
+}
+
+/* Custom Audio Carousel Styles */
+.audio-carousel {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.audio-carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.audio-carousel-item {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.audio-carousel-item > div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  width: 100%;
+}
+
+.audio-carousel-item audio {
+  width: 80% !important;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Navigation buttons */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.carousel-nav:hover {
+  background: white;
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}
+
+/* Pagination dots */
+.carousel-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #333;
+}
+
+/* Remove old Bulma carousel styles */
+.results-carousel {
+  display: none; /* Hide the broken Bulma carousel */
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: visible; /* Changed from hidden to visible */
+  padding: 20px;
+  width: 100%;
+  min-width: 100%; /* Ensure minimum width */
+  flex-shrink: 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect width calculation */
+}
+
+/* Target the inner div that contains the audio */
+.results-carousel .item > div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  width: 100%;
+  min-width: 100%; /* Ensure the container doesn't shrink */
+}
+
+/* Target the audio element inside the nested div */
+.results-carousel .item audio {
+  width: 80% !important;
+  min-width: 300px !important; /* Ensure minimum width for audio player */
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+/* Audio carousel specific styles */
+.audio-card {
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audio-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove the conflicting #audio-carousel styles since they don't match your IDs */
+/* #audio-carousel .item {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#audio-carousel audio {
+  border-radius: 8px;
+  width: 80% !important;
+}
+
+#audio-carousel .content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+} */
+
+
+

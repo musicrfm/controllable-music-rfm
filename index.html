@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MusicRFM</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MusicRFM</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Anonymous Authors<br>ICLR 2026 submission</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <span class="link-block">
+                      <a href="static/pdfs/sample.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper PDF</span>
+                    </a>
+                  </span>
+
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audio Samples Section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Audio Samples</h2>
+      
+      <!-- Prompt 1: Trance EDM -->
+      <div style="margin-bottom: 3rem;">
+        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1.5rem;">Trance EDM song with synths and reverb</h3>
+        <div id="audio-carousel-1" class="audio-carousel">
+          <div class="audio-carousel-container">
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/defaultprompt0/augmented_chord_defaultprompt0_control0.6_inject0.3.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.6 | Modification: Augmented Chord
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/defaultprompt0/minor_chord_defaultprompt0_control0.4.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.4 | Modification: Minor Chord
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/defaultprompt0/note_C_defaultprompt0_control0.6_inject0.3.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.6 | Modification: Note C
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/defaultprompt0/base_0.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                No control - default generation
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1.5rem;">Dreamy future bass with chopped synth chords.</h3>
+        <div id="audio-carousel-2" class="audio-carousel">
+          <div class="audio-carousel-container">
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_5/optimal_interval2_prompt5_control0.7.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.7 | Modification: Interval 2
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_5/optimal_noteG_prompt5_control0.5.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.5 | Modification: Note G
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_5/optimal_chordaug_prompt5_control0.5.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.5 | Modification: Augmented Chord
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_5/base_5.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                No control - default generation
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1.5rem;">A cinematic orchestral piece with soaring strings, brass, and percussion, building tension and drama.</h3>
+        <div id="audio-carousel-3" class="audio-carousel">
+          <div class="audio-carousel-container">
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_10/naive_interval6_prompt10_control0.7.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.7 | Modification: Interval 6 (tritone)
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_10/optimal_exptime_tempos_prompt10_control-0.2.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: -0.2 | Modification: Slow Tempo
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_10/optimal_exptime_tempos_prompt10_control0.2.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.2 | Modification: Fast Tempo
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_10/noteFsharp_tempo_prompt10_control_0.5_0.3.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Double Control: 0.5, 0.3 | Modification: Note F# and Slow Tempo
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_10/base_10.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                No control - default generation
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 3rem;">
+        <h3 class="title is-4 has-text-centered" style="margin-bottom: 1.5rem;">A funky groove with slap bass, wah guitar, tight drums, and playful brass stabs, evoking a 1970s dance floor.</h3>
+        <div id="audio-carousel-4" class="audio-carousel">
+          <div class="audio-carousel-container">
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_13/optimal_noteD_prompt13_control0.5.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.5 | Modification: Note D
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_13/optimal_interval1_prompt13_control0.7.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.7 | Modification: Interval 1
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_13/optimal_chordmajor_prompt13_control0.5.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                Control: 0.5 | Modification: Major Chord
+              </h2>
+            </div>
+            <div class="audio-carousel-item">
+              <div style="display: flex; justify-content: center;">
+                <audio controls style="width: 80%; margin-bottom: 1rem;">
+                  <source src="static/audio/listening_test/prompt_13/base_13.flac" type="audio/flac">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <h2 class="subtitle has-text-centered">
+                No control - default generation
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End audio carousel -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          We introduce <strong>our method</strong>, a framework for controllable music generation that adapts Recursive Feature Machines (RFMs) to steer a frozen MusicGen-Large model via activation-space interventions. Rather than optimizing at decode time or training auxiliary discriminators, our method derives orthogonal, eigenvalue-ranked concept directions from the Average Gradient Outer Product (AGOP) of lightweight layerwise probes, then injects these directions into the model’s residual stream with forward hooks.
+          </p>
+          
+          <p>
+          We contribute:
+          <ul>
+            <li><strong>Layer-based control</strong> with top-K and exponential weighting (with dropout) across all 48 decoder blocks.</li>
+            <li><strong>Time-based schedules</strong> (linear/logistic rise, exponential decay, sinusoidal, and sparse random application) for modulating steering strength during generation.</li>
+            <li><strong>Multi-direction control</strong> that supports simultaneous or staggered enforcement of attributes (e.g., tempo and chord structure).</li>
+          </ul>
+          </p>
+          
+          <p>
+          Using the SynTheory dataset, we show that RFM probes achieve competitive classification accuracy compared to feedforward probes while yielding interpretable, steerable axes. When applied at inference, these directions bias generations toward target concepts while preserving text adherence.
+          </p>
+          
+          <p>
+          In our primary analysis of RFM steering (control coefficients between 0.15 and 0.60, stochastic application probability 0.3, exponential layer dropout with parameters w₀=1 and κ=0.95), CLAP alignment remains within ~0.02 of the unsteered baseline, while probe-based concept accuracy increases monotonically with control strength (for example, note control accuracy rising from 0.23 to 0.82). Under time-based control, the probe softmax of the target note class faithfully follows the prescribed schedules, confirming precise temporal steering.
+          </p>
+          
+          <p>
+          We also perform extensive ablations on pooling, coefficients, and time-based control on the <strong>notes</strong> category in SynTheory, chosen for its reliable measurement of accuracy.
+          </p>            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
